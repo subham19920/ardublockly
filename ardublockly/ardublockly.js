@@ -12,7 +12,7 @@ var Ardublockly = Ardublockly || {};
 /** Initialize function for Ardublockly, to be called on page load. */
 Ardublockly.init = function() {
   // Lang init must run first for the rest of the page to pick the right msgs
-  Ardublockly.initLanguage();
+  // Ardublockly.initLanguage();
 
   // Inject Blockly into content_blocks and fetch additional blocks
   Ardublockly.injectBlockly(document.getElementById('content_blocks'),
@@ -758,6 +758,6 @@ Ardublockly.bindClick_ = function(el, func) {
     e.preventDefault();
     func();
   };
-  el.addEventListener('ontouchend', propagateOnce);
-  el.addEventListener('click', propagateOnce);
+  // el.addEventListener('ontouchend', propagateOnce);
+  // el.addEventListener('click', propagateOnce);
 };
